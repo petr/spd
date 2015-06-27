@@ -60,3 +60,4 @@ target/
 
 src/static/js/main.lmd.js
 src/settings_local.py
+db.sqlite3
