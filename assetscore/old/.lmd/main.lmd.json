@@ -1,0 +1,31 @@
+{
+    "name": "Main build",
+    "root": "../",
+    "modules": {
+        "_": {
+            "path": "js/vendors/lodash.js",
+            "exports": "_"
+        },
+        "underscore": "@_",
+        "$": {
+            "path": "js/vendors/jquery-1.11.3.js",
+            "exports": "jQuery"
+        },
+        "backbone": {
+            "path": "js/vendors/backbone.js",
+            "require": {
+                "underscore": "_",
+                "jQuery": "$"
+            },
+            "exports": "Backbone"
+        },
+        "templates/<%= file %>": "js/templates/*.html",
+        "views": "js/views.js",
+        "models": "js/models.js",
+        "bootstrap": "js/vendors/bootstrap.js",
+        "main": "js/main.js"
+    },
+    "main": "main",
+    "output": "../../src/static/js/main.lmd.js"
+
+}

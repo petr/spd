@@ -55,3 +55,8 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# special for project
+
+src/static/js/main.lmd.js
+src/settings_local.py
